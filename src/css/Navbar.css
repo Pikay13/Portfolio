@@ -1,30 +1,30 @@
 @import "../App.css";
 
-@media screen and (max-width: 1200px){
-  .nav-container{
-    background: var(--main-bg-color);
-    color: var(--main-text-color);
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-  }
-  .nav-container h1{
-    letter-spacing: 1px;
-    font-size: 1.7rem;
-  }
-  .nav-container ul{
-    display: flex;
-    list-style: none;
-  }
-  .nav-container ul li{
-    list-style: none;
-  }
-  .nav-container ul li a i{
-    list-style: none;
-    color: var(--main-text-color);
-    margin: 0 .5rem;
-    font-size: 1rem;
-  }
+.nav-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  background: var(--main-bg-color);
+  color: var(--main-text-color);
+  padding: 1rem;
 }
+.nav-container h1{
+  letter-spacing: 1px;
+  font-size: 1.7rem;
+}
+.nav-container ul{
+  display: flex;
+  list-style: none;
+  justify-self: right;
+}
+.nav-container ul li{
+  list-style: none;
+}
+.nav-container ul li a i{
+  list-style: none;
+  color: var(--main-text-color);
+  margin: 0 .5rem;
+  font-size: 1rem;
+}
+
