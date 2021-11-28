@@ -39,45 +39,4 @@
         width: 100%;
         padding: 0;
     }
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-  }
-:root{
-    --main-bg-color: #fff;
-    --main-text-color: #070707;
-    --grade-out: #B2B2B2;
-    --grey-bg: #f8f8f8;
-}
-.App{
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    background: var(--grey-bg);
-}
-.App .nav-wrap{
-    background: var(--main-bg-color);
-    color: var(--main-text-color);
-    position: fixed;  
-    width: 100%;
-    z-index: 1000;
-}
-.App #wrapper{
-    max-height: 100vh;
-    padding-top: 20vh;
-    margin: 0 1rem;
-}
-@media screen and (min-width: 769px){
-    .App .nav-wrap{
-        position: relative;
-        width: 30vw;
-    }
-    .App #wrapper{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        padding: 0;
-    }
 }
