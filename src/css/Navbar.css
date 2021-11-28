@@ -1,30 +1,65 @@
 @import "../App.css";
 
-@media screen and (max-width: 1200px){
-  .nav-container{
-    background: var(--main-bg-color);
-    color: var(--main-text-color);
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-  }
+.nav-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.nav-container h1{
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+}
+.nav-container ul{
+  display: flex;
+}
+.nav-container ul li{
+  list-style: none;
+}
+.nav-container ul li a{
+  color: var(--main-text-color);
+  margin: 0 .5rem; 
+  text-decoration: none;
+  font-size: 1rem;
+}
+.nav-container ul .list-item p{
+  display: none;
+}
+@media screen and (min-width: 769px){
   .nav-container h1{
-    letter-spacing: 1px;
-    font-size: 1.7rem;
+    top: 35%;
+    left: 30%;
+    position: absolute;
   }
   .nav-container ul{
-    display: flex;
-    list-style: none;
-  }
+    flex-direction: column; 
+    top: 45%;
+    left: 30%;
+    position: absolute;
+  } 
   .nav-container ul li{
-    list-style: none;
+    margin: 1rem 0;
   }
-  .nav-container ul li a i{
-    list-style: none;
-    color: var(--main-text-color);
-    margin: 0 .5rem;
-    font-size: 1rem;
+  .nav-container ul li a{
+    margin: 0;
+    text-align: center;
   }
+  .nav-container ul li a i .fas{
+    margin-right: 1rem;
+  }
+  .nav-container ul .list-item{
+    display: flex;
+    align-items: center;
+  }
+  .nav-container ul .list-item p{
+    display: block;
+    margin-left: .5rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all .2s ease-in;
+  }
+  .nav-container ul .list-item p:hover{
+    letter-spacing: 2px;
+    cursor: pointer;
+  } 
 }

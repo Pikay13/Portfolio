@@ -12,13 +12,13 @@ function Mainview(){
             <div id="text-div">
                 <h1>Prasad Kirkade</h1>
                 <p>Creative Web Developer based in Pune and I love what I do.</p>
-            </div>
-            <div className="social-icons">
-                <ul>
-                <li><a href = {url}><i class="fab fa-instagram"></i></a></li>
-                <li><a href = {url}><i class="fab fa-facebook"></i></a></li>
-                <li><a href = {url}><i class="fab fa-twitter"></i></a></li>
-                </ul>
+                <div className="social-icons">
+                    <ul>
+                    <li><a href = {url}><i class="fab fa-instagram"></i></a></li>
+                    <li><a href = {url}><i class="fab fa-facebook"></i></a></li>
+                    <li><a href = {url}><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     );

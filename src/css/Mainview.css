@@ -1,56 +1,83 @@
 @import "../App.css";
 
-@media screen and (max-width: 1200px){
+.mainview-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+.mainview-container #img-div img{
+    margin: 1rem auto;
+    border-radius: 50%;
+    width: 175px;
+    height: 175px;  
+    object-fit: cover;
+    filter: drop-shadow(rgba(0, 0, 0, 0.26) 0px 3px 6px);
+}
+.mainview-container #text-div{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+.mainview-container #text-div h1{
+    letter-spacing: .45px;
+    text-transform: uppercase;
+    margin: 1rem auto;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+.mainview-container #text-div p{
+    margin-top: 1.5rem;
+    letter-spacing: .5px;
+    font-style: italic;
+    font-weight: 600;
+    color: #767676;
+    font-size: 1rem;    
+}
+.mainview-container #text-div .social-icons{
+    display: block;
+    text-align: center;
+    margin-top: 4rem;
+}
+.mainview-container #text-div .social-icons ul{
+    display: flex;
+    list-style: none;
+}
+.mainview-container #text-div .social-icons ul li{
+    list-style: none;
+}
+.mainview-container #text-div .social-icons ul li a i{
+    color: var(--main-text-color);
+    margin: 0 1rem;
+    font-size: 1.2rem;
+}
+
+@media screen and (min-width: 1040px){
     .mainview-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        position: relative;
+        flex-direction: row;
     }
     .mainview-container #img-div img{
-        margin: 1rem auto;
-        border-radius: 50%;
-        width: 175px;
-        height: 175px;  
-        object-fit: cover;
-        object-position: center;
-        border: 1px solid #07070740;
-        filter: drop-shadow(rgba(0, 0, 0, 0.26) 0px 3px 6px);
+        width: 230px;
+        height: 230px;
     }
     .mainview-container #text-div{
+        display: flex;
+        margin: 0 3rem;
         text-align: center;
+        flex-direction: column;
     }
     .mainview-container #text-div h1{
-        letter-spacing: .45px;
-        text-transform: uppercase;
-        margin: 1rem auto;
-        font-weight: 700;
+        font-size: 3rem;
+        font-weight: 800;
+        margin: 0;
     }
     .mainview-container #text-div p{
-        margin-top: 1.5rem;
-        letter-spacing: .5px;
-        font-style: italic;
-        font-weight: 600;
-        color: #767676;
-        line-height: 1.6rem;
+        font-size: 0.9rem;
     }
-    .social-icons{
-        display: block;
-        text-align: center;
-        position: absolute;
-        bottom: -50%;
-    }
-    .social-icons ul{
-        display: flex;
-        list-style: none;
-    }
-    .social-icons ul li{
-        list-style: none;
-    }
-    .social-icons ul li a i{
-        color: var(--main-text-color);
-        margin: 0 1rem;
-        font-size: 1.2rem;
+    .mainview-container #text-div .social-icons ul li a i{
+        font-size: 1.4rem;
+        margin-left: 0;
+        margin-right: 2rem;
     }
 }

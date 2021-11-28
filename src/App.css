@@ -11,13 +11,32 @@
     --grey-bg: #f8f8f8;
 }
 .App{
+    display: flex;
+    justify-content: center;
     height: 100vh;
     background: var(--grey-bg);
 }
+.App .nav-wrap{
+    background: var(--main-bg-color);
+    color: var(--main-text-color);
+    position: fixed;  
+    width: 100%;
+    z-index: 1000;
+}
 .App #wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 8rem 2rem;
+    max-height: 100vh;
+    padding-top: 20vh;
+    margin: 0 1rem;
+}
+@media screen and (min-width: 769px){
+    .App .nav-wrap{
+        position: relative;
+        width: 30vw;
+    }
+    .App #wrapper{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+    }
 }

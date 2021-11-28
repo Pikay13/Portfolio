@@ -5,10 +5,12 @@ import Mainview from './components/Mainview.js';
 function App() {
   return (
     <div className="App">
+      <div className="nav-wrap">
         <Navbar />
-        <div id="wrapper">
-          <Mainview />
-        </div>
+      </div>
+      <div id="wrapper">
+        <Mainview />
+      </div>
     </div>
   );
 }
